@@ -1,0 +1,22 @@
+{
+  "name": "lang",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "keywords": [],
+  "author": "Samir M.",
+  "license": "ISC",
+  "devDependencies": {
+      "@babel/plugin-transform-modules-commonjs": "^7.24.7"
+  },
+  "repository": {
+      "type": "git",
+      "url": "git+https://github.com/samirm00/now.git"
+  },
+  "keywords": [
+      "time",
+      "now",
+      "date"
+  ]
+}
