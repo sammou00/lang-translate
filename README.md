@@ -13,9 +13,9 @@ This library is designed to facilitate the management and translation of phrases
 
 ## Installation
 
-To use this library, ensure you have the following files in your project:
+Install `lang`
 
-1. `Lang.js` - The main class file for managing translations.
+1. `npm i lang`
 
 ## Getting Started
 
@@ -25,6 +25,42 @@ First, import the `Lang` class and the phrases array:
 
 ```javascript
 import Lang from 'Lang.js';
+```
+
+### 3. Create a folder `data` and inside it create a file `phrases.js`
+
+Add this data to `phrases.js`
+
+```javascript
+const phrases = [
+    {
+        id: 1,
+        en: 'Hello',
+        fr: 'Bonjour',
+        nl: 'Hallo'
+    },
+    {
+        id: 2,
+        en: 'Goodbye',
+        fr: 'Au revoir',
+        nl: 'Tot ziens'
+    },
+    {
+        id: 3,
+        en: 'Thank you',
+        fr: 'Merci',
+        nl: 'Dank u'
+    },
+    {
+        id: 4,
+        en: 'Good morning',
+        fr: 'Bonjour',
+        nl: 'Goedemorgen'
+    }
+];
+
+export default phrases;
+
 ```
 
 ### 2. Initialize the Library
@@ -44,7 +80,7 @@ If no default language is specified, it defaults to English (`'en'`).
 Change the default language at any time using the `setLanguage` method:
 
 ```javascript
-lang.setLanguage('en'); // Change default language to Spanish
+lang.setLanguage('en'); // you can use `en`, `fr` and `nl`
 ```
 
 #### Retrieve All Phrases
@@ -79,7 +115,7 @@ Add a new phrase with translations:
 const newId = lang.addPhrase({
   en: 'Hello',
   fr: 'Bonjour',
-  es: 'Hola'
+  nl: 'Hallo'
 });
 console.log(newId); // New phrase ID
 ```
@@ -92,7 +128,7 @@ Update an existing phrase by its ID:
 lang.updatePhrase(1, {
   en: 'Goodbye',
   fr: 'Au revoir',
-  es: 'Adiós'
+  nl: 'Tot ziens'
 });
 ```
 
@@ -109,7 +145,7 @@ lang.deletePhrase(1); // Deletes the phrase with ID 1
 Here is a complete example of how to use the library:
 
 ```javascript
-import Lang from './Lang.js';
+import Lang from 'Lang.js';
 
 // Initialize with default language as French
 const lang = new Lang('fr');
@@ -120,14 +156,10 @@ lang.addPhrase({
   fr: 'Bonjour',
   es: 'Hola'
 });
-lang.addPhrase({
-  en: 'Goodbye',
-  fr: 'Au revoir',
-  es: 'Adiós'
-});
 
-// Change language to Spanish
-lang.setLanguage('es');
+
+// Change language to French
+lang.setLanguage('fr');
 
 // Translate phrases
 console.log(lang.translate(1)); // Output: Hola
@@ -137,7 +169,7 @@ console.log(lang.translate(2)); // Output: Adiós
 lang.updatePhrase(1, {
   en: 'Hi',
   fr: 'Salut',
-  es: 'Hola'
+  nl: 'Hallo'
 });
 
 // Delete a phrase

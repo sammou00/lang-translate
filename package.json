@@ -3,20 +3,22 @@
   "type": "module",
   "version": "1.0.0",
   "description": "",
-  "main": "main.js",
-  "keywords": [],
+  "main": "index.js",
   "author": "Samir M.",
   "license": "ISC",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "devDependencies": {
-      "@babel/plugin-transform-modules-commonjs": "^7.24.7"
+    "@babel/plugin-transform-modules-commonjs": "^7.24.7"
   },
   "repository": {
-      "type": "git",
-      "url": "git+https://github.com/samirm00/now.git"
+    "type": "git",
+    "url": "git+https://github.com/samirm00/lang.git"
   },
   "keywords": [
-      "time",
-      "now",
-      "date"
-  ]
+    "lang",
+    "translate"
+],
+    "homepage": "https://github.com/samirm00/lang#readme"
 }
