@@ -6,9 +6,6 @@
   "scripts": {
     "format": "prettier --write ."
   },
-  "dependencies": {
-    "@babel/plugin-transform-modules-commonjs": "^7.24.7"
-  },
   "devDependencies": {
     "prettier": "^3.3.2"
   },
