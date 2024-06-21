@@ -1,6 +1,6 @@
 {
   "name": "lang-translate",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "This library is designed to facilitate the management and translation of phrases for multi-language websites. It provides a simple interface for setting the default language, adding new phrases, updating existing ones, and retrieving translations based on the current language.",
   "main": "index.js",
   "scripts": {

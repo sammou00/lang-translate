@@ -24,7 +24,7 @@ Install `lang-translate`
 First, import the `Lang` class and the phrases array:
 
 ```javascript
-import Lang from 'lang-translate';
+const lang = require('lang-translate');
 ```
 
 ### 3. Create a folder `data` and inside it create a file `phrases.js`
@@ -59,7 +59,7 @@ const phrases = [
   }
 ];
 
-export default phrases;
+module.exports = phrases;
 ```
 
 ### 2. Initialize the Library
@@ -153,15 +153,15 @@ const lang = new Lang('fr');
 lang.addPhrase({
   en: 'Hello',
   fr: 'Bonjour',
-  es: 'Hola'
+  nl: 'Hallo'
 });
 
 // Change language to French
 lang.setLanguage('fr');
 
 // Translate phrases
-console.log(lang.translate(1)); // Output: Hola
-console.log(lang.translate(2)); // Output: Adiós
+console.log(lang.translate(1)); 
+console.log(lang.translate(2)); 
 
 // Update a phrase
 lang.updatePhrase(1, {

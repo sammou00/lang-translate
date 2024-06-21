@@ -1,4 +1,4 @@
-import phrases from './data/phrases.js';
+const phrases = require('./data/phrases');
 
 class LangTranslate {
     constructor(defaultLanguage = 'en') {
@@ -62,4 +62,4 @@ class LangTranslate {
     }
 }
 
-export default LangTranslate;
+module.exports = LangTranslate;
