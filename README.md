@@ -1,6 +1,8 @@
 # Lang
 
-This library is designed to facilitate the management and translation of phrases for multi-language websites. It provides a simple interface for setting the default language, adding new phrases, updating existing ones, and retrieving translations based on the current language.
+This library is designed to facilitate the management and translation of phrases for multi-language websites.
+It provides a simple interface for setting the default language, adding new phrases, updating existing ones,
+and retrieving translations based on the current language.
 
 ## Features
 
@@ -21,13 +23,13 @@ Install `lang-translate`
 
 ### 1. Import the Library
 
-First, import the `Lang` class and the phrases array:
+First, import the `Lang` class :
 
 ```javascript
 const lang = require('lang-translate');
 ```
 
-### 3. Create a folder `data` and inside it create a file `phrases.js`
+### 3. Create a folder `data` in the root of your project and inside it create a file `phrases.js`
 
 Add this data to `phrases.js`
 
@@ -67,7 +69,7 @@ module.exports = phrases;
 Create an instance of the `Lang` class, optionally setting the default language:
 
 ```javascript
-const lang = new Lang('fr'); // Default language is French
+const lang = new Lang('en'); // Default language is English
 ```
 
 If no default language is specified, it defaults to English (`'en'`).
@@ -95,7 +97,7 @@ console.log(lang.getAllPhrases());
 Fetch a specific phrase by its ID:
 
 ```javascript
-console.log(lang.getPhraseById(1)); // Retrieves the phrase with ID 1
+console.log(lang.getPhraseById(1)); 
 ```
 
 #### Translate a Phrase
@@ -103,7 +105,7 @@ console.log(lang.getPhraseById(1)); // Retrieves the phrase with ID 1
 Translate a phrase based on the current language setting:
 
 ```javascript
-console.log(lang.translate(1)); // Translates the phrase with ID 1 to the current language
+console.log(lang.translate(1)); 
 ```
 
 #### Add a New Phrase
@@ -136,7 +138,7 @@ lang.updatePhrase(1, {
 Delete a phrase by its ID:
 
 ```javascript
-lang.deletePhrase(1); // Deletes the phrase with ID 1
+lang.deletePhrase(1);
 ```
 
 ## Example Usage
@@ -144,7 +146,7 @@ lang.deletePhrase(1); // Deletes the phrase with ID 1
 Here is a complete example of how to use the library:
 
 ```javascript
-import Lang from 'Lang.js';
+const Lang = require('lang-translate')
 
 // Initialize with default language as French
 const lang = new Lang('fr');
@@ -187,5 +189,5 @@ const phrases = [
   { id: 2, en: 'Goodbye', fr: 'Au revoir', nl: 'Tot ziens' }
 ];
 
-export default phrases;
+module.exports = phrases;
 ```

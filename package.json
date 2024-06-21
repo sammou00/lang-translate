@@ -4,16 +4,16 @@
   "description": "This library is designed to facilitate the management and translation of phrases for multi-language websites. It provides a simple interface for setting the default language, adding new phrases, updating existing ones, and retrieving translations based on the current language.",
   "main": "index.js",
   "scripts": {
-    "format": "prettier --write ."
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/samirm00/lang-translate.git"
   },
   "keywords": [
-    "time",
-    "now",
-    "date"
+    "language",
+    "lang",
+    "translate"
   ],
   "author": "samirm00",
   "license": "ISC",

@@ -1,4 +1,4 @@
-const phrases = require('./data/phrases');
+const phrases = require('../../data/phrases');
 
 class LangTranslate {
     constructor(defaultLanguage = 'en') {
