@@ -1,24 +1,30 @@
 {
-  "name": "lang",
-  "type": "module",
+  "name": "lang-translate",
   "version": "1.0.0",
-  "description": "",
+  "description": "This library is designed to facilitate the management and translation of phrases for multi-language websites. It provides a simple interface for setting the default language, adding new phrases, updating existing ones, and retrieving translations based on the current language.",
   "main": "index.js",
-  "author": "Samir M.",
-  "license": "ISC",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "format": "prettier --write ."
+  },
+  "dependencies": {
+    "@babel/plugin-transform-modules-commonjs": "^7.24.7"
   },
   "devDependencies": {
-    "@babel/plugin-transform-modules-commonjs": "^7.24.7"
+    "prettier": "^3.3.2"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/samirm00/lang.git"
+    "url": "git+https://github.com/samirm00/lang-translate.git"
   },
   "keywords": [
-    "lang",
-    "translate"
-],
-    "homepage": "https://github.com/samirm00/lang#readme"
+    "time",
+    "now",
+    "date"
+  ],
+  "author": "samirm00",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/samirm00/lang-translate/issues"
+  },
+  "homepage": "https://github.com/samirm00/lang-translate#readme"
 }

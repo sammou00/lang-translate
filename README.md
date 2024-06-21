@@ -13,9 +13,9 @@ This library is designed to facilitate the management and translation of phrases
 
 ## Installation
 
-Install `lang`
+Install `lang-translate`
 
-1. `npm i lang`
+1. `npm i lang-translate`
 
 ## Getting Started
 
@@ -24,7 +24,7 @@ Install `lang`
 First, import the `Lang` class and the phrases array:
 
 ```javascript
-import Lang from 'Lang.js';
+import Lang from 'lang-translate';
 ```
 
 ### 3. Create a folder `data` and inside it create a file `phrases.js`
@@ -33,34 +33,33 @@ Add this data to `phrases.js`
 
 ```javascript
 const phrases = [
-    {
-        id: 1,
-        en: 'Hello',
-        fr: 'Bonjour',
-        nl: 'Hallo'
-    },
-    {
-        id: 2,
-        en: 'Goodbye',
-        fr: 'Au revoir',
-        nl: 'Tot ziens'
-    },
-    {
-        id: 3,
-        en: 'Thank you',
-        fr: 'Merci',
-        nl: 'Dank u'
-    },
-    {
-        id: 4,
-        en: 'Good morning',
-        fr: 'Bonjour',
-        nl: 'Goedemorgen'
-    }
+  {
+    id: 1,
+    en: 'Hello',
+    fr: 'Bonjour',
+    nl: 'Hallo'
+  },
+  {
+    id: 2,
+    en: 'Goodbye',
+    fr: 'Au revoir',
+    nl: 'Tot ziens'
+  },
+  {
+    id: 3,
+    en: 'Thank you',
+    fr: 'Merci',
+    nl: 'Dank u'
+  },
+  {
+    id: 4,
+    en: 'Good morning',
+    fr: 'Bonjour',
+    nl: 'Goedemorgen'
+  }
 ];
 
 export default phrases;
-
 ```
 
 ### 2. Initialize the Library
@@ -156,7 +155,6 @@ lang.addPhrase({
   fr: 'Bonjour',
   es: 'Hola'
 });
-
 
 // Change language to French
 lang.setLanguage('fr');

@@ -1,6 +1,6 @@
 import phrases from './data/phrases.js';
 
-class Lang {
+class LangTranslate {
     constructor(defaultLanguage = 'en') {
         this.defaultLanguage = defaultLanguage;
         this.phrases = phrases;
@@ -62,4 +62,4 @@ class Lang {
     }
 }
 
-export default Lang;
+export default LangTranslate;
