@@ -26,7 +26,7 @@ Install `lang-translate`
 First, import the `Lang` class :
 
 ```javascript
-const lang = require('lang-translate');
+const Lang = require('lang-translate');
 ```
 
 ### 3. Create a folder `data` in the root of your project and inside it create a file `phrases.js`
@@ -52,12 +52,6 @@ const phrases = [
     en: 'Thank you',
     fr: 'Merci',
     nl: 'Dank u'
-  },
-  {
-    id: 4,
-    en: 'Good morning',
-    fr: 'Bonjour',
-    nl: 'Goedemorgen'
   }
 ];
 
@@ -69,7 +63,7 @@ module.exports = phrases;
 Create an instance of the `Lang` class, optionally setting the default language:
 
 ```javascript
-const lang = new Lang('en'); // Default language is English
+const lang = new Lang(); // Default language is English
 ```
 
 If no default language is specified, it defaults to English (`'en'`).
@@ -185,8 +179,12 @@ The `phrases` array should be structured as follows:
 
 ```javascript
 const phrases = [
-  { id: 1, en: 'Hello', fr: 'Bonjour', nl: 'Hallo' },
-  { id: 2, en: 'Goodbye', fr: 'Au revoir', nl: 'Tot ziens' }
+    {
+    id: 4,
+    en: 'Good morning',
+    fr: 'Bonjour',
+    nl: 'Goedemorgen'
+  }
 ];
 
 module.exports = phrases;
