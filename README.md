@@ -75,7 +75,8 @@ If no default language is specified, it defaults to English (`'en'`).
 Change the default language at any time using the `setLanguage` method:
 
 ```javascript
-lang.setLanguage('en'); // you can use any language you want as long as they exits in your `data/phrases.js`
+// you can use any language you want as long as they exits in your `data/phrases.js`
+lang.setLanguage('en'); 
 ```
 
 #### Retrieve All Phrases
@@ -179,7 +180,7 @@ lang.deletePhrase(2);
 console.log(lang.getAllPhrases());
 ```
 
-## Add, update and delete phrases `permanently` to `'data/phrases.js/`
+## Add, update and delete phrases `permanently` to `'data/phrases.js`
 
 you can add/remove languages according to your need:
 
