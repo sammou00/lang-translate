@@ -179,19 +179,42 @@ lang.deletePhrase(2);
 console.log(lang.getAllPhrases());
 ```
 
-## Add phrases to 'data/phrases.js/
+## Add, update and delete phrases `permanently` to `'data/phrases.js/`
 
-The `phrases` array should be structured as follows:
+you can add/remove languages according to your need:
 
 ```javascript
 const phrases = [
-    {
-    id: 4,
+  {
+    id: 1,
     en: 'Good morning',
     fr: 'Bonjour',
-    nl: 'Goedemorgen'
+    nl: 'Goedemorgen',
+    de: 'Guten Morgen',    // German
+    es: 'Buenos días',     // Spanish
+    it: 'Buongiorno',      // Italian
+    pt: 'Bom dia',         // Portuguese
+    ru: 'Доброе утро',     // Russian
+    zh: '早上好',          // Chinese
+    ja: 'おはようございます', // Japanese
+    ko: '좋은 아침',       // Korean
+    ar: 'صباح الخير',      // Arabic
+    hi: 'सुप्रभात',       // Hindi
+    he: 'בוקר טוב',       // Hebrew
+    tr: 'Günaydın',        // Turkish
+    sv: 'God morgon',      // Swedish
+    no: 'God morgen',      // Norwegian
+    da: 'God morgen',      // Danish
+    fi: 'Hyvää huomenta',  // Finnish
+    pl: 'Dzień dobry',     // Polish
+    el: 'Καλημέρα',        // Greek
+    cs: 'Dobré ráno',      // Czech
+    hu: 'Jó reggelt',      // Hungarian
+    th: 'สวัสดีตอนเช้า', // Thai
+    vi: 'Chào buổi sáng'   // Vietnamese
   }
 ];
+
 
 module.exports = phrases;
 ```
