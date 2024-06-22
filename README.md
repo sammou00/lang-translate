@@ -1,8 +1,7 @@
 # Lang
 
 This library is designed to facilitate the management and translation of phrases for multi-language websites.
-It provides a simple interface for setting the default language, adding new phrases, updating existing ones,
-and retrieving translations based on the current language.
+It provides a simple interface for setting the default language and  retrieving translations based on the current language.
 
 ## Features
 
@@ -31,9 +30,10 @@ const Lang = require('lang-translate');
 
 ### 3. Create a folder `data` in the root of your project and inside it create a file `phrases.js`
 
-Add this data to `phrases.js`
+Add this data to `phrases.js` 
 
 ```javascript
+// You can add, or modify the phrases according to your need
 const phrases = [
   {
     id: 1,
@@ -63,7 +63,7 @@ module.exports = phrases;
 Create an instance of the `Lang` class, optionally setting the default language:
 
 ```javascript
-const lang = new Lang(); // Default language is English
+const lang = new Lang();
 ```
 
 If no default language is specified, it defaults to English (`'en'`).
@@ -75,7 +75,7 @@ If no default language is specified, it defaults to English (`'en'`).
 Change the default language at any time using the `setLanguage` method:
 
 ```javascript
-lang.setLanguage('en'); // you can use `en`, `fr` and `nl`
+lang.setLanguage('en'); // you can use any language you want as long as they exits in your `data/phrases.js`
 ```
 
 #### Retrieve All Phrases
@@ -107,6 +107,8 @@ console.log(lang.translate(1));
 Add a new phrase with translations:
 
 ```javascript
+// Note the new added phrases will not be saved permanently, if that what you 
+// want you can add them in `data/phrases.js 
 const newId = lang.addPhrase({
   en: 'Hello',
   fr: 'Bonjour',
@@ -120,6 +122,8 @@ console.log(newId); // New phrase ID
 Update an existing phrase by its ID:
 
 ```javascript
+// Note the new updated phrases will not be updated permanently, if that what you 
+// want you can update them in `data/phrases.js 
 lang.updatePhrase(1, {
   en: 'Goodbye',
   fr: 'Au revoir',
@@ -132,6 +136,8 @@ lang.updatePhrase(1, {
 Delete a phrase by its ID:
 
 ```javascript
+// Note the deleted phrases will not be deleted permanently, if that what you 
+// want you can remove them from in `data/phrases.js 
 lang.deletePhrase(1);
 ```
 
@@ -152,12 +158,12 @@ lang.addPhrase({
   nl: 'Hallo'
 });
 
-// Change language to French
-lang.setLanguage('fr');
+// Change language to English
+lang.setLanguage('en');
 
 // Translate phrases
-console.log(lang.translate(1)); 
-console.log(lang.translate(2)); 
+console.log(lang.translate(1)); // the phrase with id = 1 in English
+console.log(lang.translate(2)); // the phrase with id = 2 in English
 
 // Update a phrase
 lang.updatePhrase(1, {
