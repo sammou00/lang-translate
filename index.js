@@ -1,5 +1,5 @@
 class LangTranslate {
-    constructor(defaultLanguage = 'en') {
+    constructor(defaultLanguage = 'en', phrases = []) {
         this.defaultLanguage = defaultLanguage;
         this.phrases = phrases;
 
