@@ -25,12 +25,12 @@ Install `lang-translate`
 First, import the `Lang` class :
 
 ```javascript
-const Lang = require('lang-translate');
+import Lang from 'lang-translate'
 ```
 
 ### 3. Create a folder `data` in the root of your project and inside it create a file `phrases.js`
 
-Add this data to `phrases.js` 
+Add this data to `phrases.js`
 
 ```javascript
 // You can add, or modify the phrases according to your need
@@ -55,7 +55,7 @@ const phrases = [
   }
 ];
 
-module.exports = phrases;
+export default phrases;
 ```
 
 ### 2. Initialize the Library
@@ -217,5 +217,5 @@ const phrases = [
 ];
 
 
-module.exports = phrases;
+export default phrases;
 ```
