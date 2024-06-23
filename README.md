@@ -22,10 +22,10 @@ Install `lang-translate`
 
 ### 1. Import the Library
 
-First, import the `Lang` class :
+First, import the `LangTranslate` class :
 
 ```javascript
-import Lang from 'lang-translate'
+import LangTranslate from 'lang-translate'
 ```
 
 ### 3. Create a folder `data` in the root of your project and inside it create a file `phrases.js`
@@ -60,10 +60,10 @@ const phrases = [
 
 ### 2. Initialize the Library
 
-Create an instance of the `Lang` class, you need to pass the language  and your phrases array:
+Create an instance of the `LangTranslate` class, you need to pass the language  and your phrases array:
 
 ```javascript
-const lang = new Lang('en', phrases);
+const lang = new LangTranslate('en', phrases);
 ```
 
 If no default language is specified, it defaults to English (`'en'`).
@@ -103,78 +103,29 @@ Translate a phrase based on the current language setting:
 console.log(lang.translate(1)); 
 ```
 
-#### Add a New Phrase
-
-Add a new phrase with translations:
-
-```javascript
-// Note the new added phrases will not be saved permanently, if that what you 
-// want you can add them in `data/phrases.js 
-const newId = lang.addPhrase({
-  en: 'Hello',
-  fr: 'Bonjour',
-  nl: 'Hallo'
-});
-console.log(newId); // New phrase ID
-```
-
-#### Update an Existing Phrase
-
-Update an existing phrase by its ID:
-
-```javascript
-// Note the new updated phrases will not be updated permanently, if that what you 
-// want you can update them in `data/phrases.js 
-lang.updatePhrase(1, {
-  en: 'Goodbye',
-  fr: 'Au revoir',
-  nl: 'Tot ziens'
-});
-```
-
-#### Delete a Phrase
-
-Delete a phrase by its ID:
-
-```javascript
-// Note the deleted phrases will not be deleted permanently, if that what you 
-// want you can remove them from in `data/phrases.js 
-lang.deletePhrase(1);
-```
-
 ## Example Usage
 
 Here is a complete example of how to use the library:
 
 ```javascript
-const Lang = require('lang-translate')
+import LangTranslate from 'lang-translate'
 
-// Initialize with default language as French
-const lang = new Lang('fr');
-
-// Add some phrases
-lang.addPhrase({
+const phrases = [
+  id : 1,
   en: 'Hello',
   fr: 'Bonjour',
   nl: 'Hallo'
-});
+]
+
+// Initialize with default language as French
+const lang = new LangTranslate('fr', phrases);
 
 // Change language to English
 lang.setLanguage('en');
 
 // Translate phrases
-console.log(lang.translate(1)); // the phrase with id = 1 in English
-console.log(lang.translate(2)); // the phrase with id = 2 in English
-
-// Update a phrase
-lang.updatePhrase(1, {
-  en: 'Hi',
-  fr: 'Salut',
-  nl: 'Hallo'
-});
-
-// Delete a phrase
-lang.deletePhrase(2);
+console.log(lang.translate(1)); // Hello
+console.log(lang.translate(2)); // Phrase with id 2 not found.
 
 // Retrieve all phrases
 console.log(lang.getAllPhrases());
