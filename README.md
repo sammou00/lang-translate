@@ -55,15 +55,15 @@ const phrases = [
   }
 ];
 
-export default phrases;
+
 ```
 
 ### 2. Initialize the Library
 
-Create an instance of the `Lang` class, optionally setting the default language:
+Create an instance of the `Lang` class, you need to pass the language  and your phrases array:
 
 ```javascript
-const lang = new Lang();
+const lang = new Lang('en', phrases);
 ```
 
 If no default language is specified, it defaults to English (`'en'`).
@@ -216,6 +216,4 @@ const phrases = [
   }
 ];
 
-
-export default phrases;
 ```

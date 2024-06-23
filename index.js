@@ -1,5 +1,3 @@
-import phrases from '../../data/phrases.js';
-
 class LangTranslate {
     constructor(defaultLanguage = 'en') {
         this.defaultLanguage = defaultLanguage;
