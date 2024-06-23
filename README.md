@@ -1,4 +1,4 @@
-# Lang
+# Lang-translate
 
 This library is designed to facilitate the management and translation of phrases for multi-language websites.
 It provides a simple interface for setting the default language and  retrieving translations based on the current language.
@@ -31,6 +31,7 @@ Add this data to `phrases.js`
 
 ```javascript
 // You can add/remove languages according toy our need.
+// add all your phrases in phrases
 const phrases = [
   {
     id: 1,
@@ -81,7 +82,8 @@ const lang = new LangTranslate('en', phrases);
 Change the default language at any time using the `setLanguage` method:
 
 ```javascript
-// you can use any language you want as long as it exits in your `data/phrases.js`
+// you can use any language you want as long as
+// it exits in your `data/phrases.js`
 lang.setLanguage('en'); 
 ```
 
@@ -127,11 +129,9 @@ const phrases = [
 const lang = new LangTranslate('fr', phrases);
 
 // Translate phrases
-console.log(lang.translate(1)); // Hello
+console.log(lang.translate(1)); // Bonjour
 console.log(lang.translate(2)); // Phrase with id 2 not found.
 
 // Retrieve all phrases
 console.log(lang.getAllPhrases());
 ```
-
-## Add, update and delete phrases `permanently` from `phrases.js`
