@@ -30,7 +30,7 @@ import LangTranslate from 'lang-translate'
 Add this data to `phrases.js`
 
 ```javascript
-// You can add/remove languages according toy our need.
+// You can add/remove languages according to your need.
 // add all your phrases in phrases
 const phrases = [
   {
@@ -119,10 +119,12 @@ Here is a complete example of how to use the library:
 import LangTranslate from 'lang-translate'
 
 const phrases = [
-  id : 1,
-  en: 'Hello',
-  fr: 'Bonjour',
-  nl: 'Hallo'
+  {
+    id : 1,
+    en: 'Hello',
+    fr: 'Bonjour',
+    nl: 'Hallo'
+  }
 ]
 
 // Initialize with default language as French
@@ -134,4 +136,7 @@ console.log(lang.translate(2)); // Phrase with id 2 not found.
 
 // Retrieve all phrases
 console.log(lang.getAllPhrases());
+
+// Retrieve a phrase by id
+console.log(lang.getPhraseById(1)); 
 ```
