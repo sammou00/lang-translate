@@ -1,7 +1,7 @@
 # Lang-translate
 
 This library is designed to facilitate the management and translation of phrases for multi-language websites.
-It provides a simple interface for setting the default language and  retrieving translations based on the current language.
+It provides a simple interface for setting the default language and retrieving translations based on the current language.
 
 ## Features
 
@@ -22,44 +22,73 @@ Install `lang-translate`
 First, import the `LangTranslate` class :
 
 ```javascript
-import LangTranslate from 'lang-translate'
+import LangTranslate from 'lang-translate';
 ```
 
-### 3. Create a file `phrases.js`
+### 3. Create a file `phrases.js` in anew folder `data`
 
 Add this data to `phrases.js`
 
 ```javascript
 // You can add/remove languages according to your need.
 // add all your phrases in phrases
-const phrases = [
+const phrases = 
+[
   {
     id: 1,
-    en: 'Good morning',
-    fr: 'Bonjour',
-    nl: 'Goedemorgen',
-    de: 'Guten Morgen',    // German
-    es: 'Buenos días',     // Spanish
-    it: 'Buongiorno',      // Italian
-    pt: 'Bom dia',         // Portuguese
-    ru: 'Доброе утро',     // Russian
-    zh: '早上好',          // Chinese
+    en: 'Good morning', // English
+    fr: 'Bonjour', // French
+    nl: 'Goedemorgen', // Dutch
+    de: 'Guten Morgen', // German
+    es: 'Buenos días', // Spanish
+    it: 'Buongiorno', // Italian
+    pt: 'Bom dia', // Portuguese
+    ru: 'Доброе утро', // Russian
+    zh: '早上好', // Chinese
     ja: 'おはようございます', // Japanese
-    ko: '좋은 아침',       // Korean
-    ar: 'صباح الخير',      // Arabic
-    hi: 'सुप्रभात',       // Hindi
-    he: 'בוקר טוב',       // Hebrew
-    tr: 'Günaydın',        // Turkish
-    sv: 'God morgon',      // Swedish
-    no: 'God morgen',      // Norwegian
-    da: 'God morgen',      // Danish
-    fi: 'Hyvää huomenta',  // Finnish
-    pl: 'Dzień dobry',     // Polish
-    el: 'Καλημέρα',        // Greek
-    cs: 'Dobré ráno',      // Czech
-    hu: 'Jó reggelt',      // Hungarian
+    ko: '좋은 아침', // Korean
+    ar: 'صباح الخير', // Arabic
+    hi: 'सुप्रभात', // Hindi
+    he: 'בוקר טוב', // Hebrew
+    tr: 'Günaydın', // Turkish
+    sv: 'God morgon', // Swedish
+    no: 'God morgen', // Norwegian
+    da: 'God morgen', // Danish
+    fi: 'Hyvää huomenta', // Finnish
+    pl: 'Dzień dobry', // Polish
+    el: 'Καλημέρα', // Greek
+    cs: 'Dobré ráno', // Czech
+    hu: 'Jó reggelt', // Hungarian
     th: 'สวัสดีตอนเช้า', // Thai
-    vi: 'Chào buổi sáng'  
+    vi: 'Chào buổi sáng', // Vietnamese
+  },
+  {
+    id: 2,
+    en: 'Goodbye', // English
+    fr: 'Au revoir', // French
+    nl: 'Tot ziens', // Dutch
+    de: 'Auf Wiedersehen', // German
+    es: 'Adiós', // Spanish
+    it: 'Arrivederci', // Italian
+    pt: 'Adeus', // Portuguese
+    ru: 'До свидания', // Russian
+    zh: '再见', // Chinese
+    ja: 'さようなら', // Japanese
+    ko: '안녕히 가세요', // Korean
+    ar: 'مع السلامة', // Arabic
+    hi: 'अलविदा', // Hindi
+    he: 'להתראות', // Hebrew
+    tr: 'Hoşçakal', // Turkish
+    sv: 'Adjö', // Swedish
+    no: 'Ha det', // Norwegian
+    da: 'Farvel', // Danish
+    fi: 'Näkemiin', // Finnish
+    pl: 'Do widzenia', // Polish
+    el: 'Αντίο', // Greek
+    cs: 'Sbohem', // Czech
+    hu: 'Viszlát', // Hungarian
+    th: 'ลาก่อน', // Thai
+    vi: 'Tạm biệt', // Vietnamese
   }
 ];
 
@@ -68,7 +97,7 @@ export default phrases;
 
 ### 2. Initialize the Library
 
-Create an instance of the `LangTranslate` class, you need to pass the language  and your phrases array:
+Create an instance of the `LangTranslate` class, you need to pass the language and your phrases array:
 
 ```javascript
 import phrases from './data/phrases.js';
@@ -84,7 +113,7 @@ Change the default language at any time using the `setLanguage` method:
 ```javascript
 // you can use any language you want as long as
 // it exits in your `data/phrases.js`
-lang.setLanguage('en'); 
+lang.setLanguage('fr');
 ```
 
 #### Retrieve All Phrases
@@ -100,7 +129,7 @@ console.log(lang.getAllPhrases());
 Fetch a specific phrase by its ID:
 
 ```javascript
-console.log(lang.getPhraseById(1)); 
+console.log(lang.getPhraseById(1));
 ```
 
 #### Translate a Phrase
@@ -108,7 +137,7 @@ console.log(lang.getPhraseById(1));
 Translate a phrase based on the current language setting:
 
 ```javascript
-console.log(lang.translate(1)); 
+console.log(lang.translate(1));
 ```
 
 ## Example Usage
@@ -116,27 +145,38 @@ console.log(lang.translate(1));
 Here is a complete example of how to use the library:
 
 ```javascript
-import LangTranslate from 'lang-translate'
+import LangTranslate from 'lang-translate';
 
-const phrases = [
+const phrases = 
+[
   {
-    id : 1,
+    id: 1,
     en: 'Hello',
     fr: 'Bonjour',
     nl: 'Hallo'
+  },
+  {
+    id : 2,
+    en: 'Goodbye', 
+    fr: 'Au revoir', 
+    nl: 'Tot ziens'
   }
-]
+];
 
 // Initialize with default language as French
 const lang = new LangTranslate('fr', phrases);
 
 // Translate phrases
 console.log(lang.translate(1)); // Bonjour
-console.log(lang.translate(2)); // Phrase with id 2 not found.
+
+// Change the default language
+lang.setLanguage('nl');
+console.log(lang.translate(2)); // Tot ziens
+console.log(lang.translate(3)); // Phrase with id 3 not found.
 
 // Retrieve all phrases
 console.log(lang.getAllPhrases());
 
 // Retrieve a phrase by id
-console.log(lang.getPhraseById(1)); 
+console.log(lang.getPhraseById(1));
 ```
