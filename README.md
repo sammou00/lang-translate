@@ -25,7 +25,7 @@ First, import the `LangTranslate` class :
 import LangTranslate from 'lang-translate';
 ```
 
-### 3. Create a file `phrases.js` in anew folder `data`
+### 3. Create a file `phrases.js` in a new folder `data`
 
 Add this data to `phrases.js`
 
@@ -137,7 +137,8 @@ console.log(lang.getPhraseById(1));
 Translate a phrase based on the current language setting:
 
 ```javascript
-console.log(lang.translate(1));
+lang.setLanguage('ko');
+console.log(lang.translate(1)); // 좋은 아침
 ```
 
 ## Example Usage
