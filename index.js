@@ -1,4 +1,4 @@
-class LangTranslate {
+class LanguageTranslate {
     constructor(defaultLanguage = 'en', phrases = []) {
         this.defaultLanguage = defaultLanguage;
         this.phrases = phrases;
@@ -60,4 +60,4 @@ class LangTranslate {
     }
 }
 
-export default LangTranslate;
+export default LanguageTranslate;

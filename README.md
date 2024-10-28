@@ -19,10 +19,10 @@ Install `lang-translate`
 
 ### 1. Import the Library
 
-First, import the `LangTranslate` class :
+First, import the `LanguageTranslate` class :
 
 ```javascript
-import LangTranslate from 'lang-translate';
+import LanguageTranslate from 'LanguageTranslate';
 ```
 
 ### 3. Create a file `phrases.js` in a new folder `data`
@@ -97,11 +97,11 @@ export default phrases;
 
 ### 2. Initialize the Library
 
-Create an instance of the `LangTranslate` class, you need to pass the language and your phrases array:
+Create an instance of the `LanguageTranslate` class, you need to pass the language and your phrases array:
 
 ```javascript
 import phrases from './data/phrases.js';
-const lang = new LangTranslate('en', phrases);
+const lang = new LanguageTranslate('en', phrases);
 ```
 
 ### 3. Using the Library
@@ -146,7 +146,7 @@ console.log(lang.translate(1)); // 좋은 아침
 Here is a complete example of how to use the library:
 
 ```javascript
-import LangTranslate from 'lang-translate';
+import LanguageTranslate from 'LanguageTranslate';
 
 const phrases = 
 [
@@ -165,7 +165,7 @@ const phrases =
 ];
 
 // Initialize with default language as French
-const lang = new LangTranslate('fr', phrases);
+const lang = new LanguageTranslate('fr', phrases);
 
 // Translate phrases
 console.log(lang.translate(1)); // Bonjour
