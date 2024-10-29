@@ -1,28 +1,28 @@
-# PolyLingo
+# Translingo
 
 This library is designed to facilitate the management and translation of phrases for multi-language websites.
 It provides a simple interface for setting the default language and retrieving translations based on the current language.
 
 ## Features
 
--   Set and change the default language.
--   Retrieve all phrases or a specific phrase by its ID.
--   Translate phrases based on the current language setting.
+- Set and change the default language.
+- Retrieve all phrases or a specific phrase by its ID.
+- Translate phrases based on the current language setting.
 
 ## Installation
 
-Install `polyLingo`
+Install `translingo`
 
-1. `npm i polyLingo`
+1. `npm i translingo`
 
 ## Getting Started
 
 ### 1. Import the Library
 
-First, import the ` PolyLingo` class :
+First, import the ` Translingo` class :
 
 ```javascript
-import PolyLingo from 'polyLingo';
+import Translingo from 'translingo';
 ```
 
 ### 3. Create a file `phrases.js` in a new folder `data`
@@ -96,11 +96,11 @@ export default phrases;
 
 ### 2. Initialize the Library
 
-Create an instance of the `Linguify` class, you need to pass the language and your phrases array:
+Create an instance of the `Translingo` class, you need to pass the language and your phrases array:
 
 ```javascript
 import phrases from './data/phrases.js';
-const lang = new PolyLingo('en', phrases);
+const lang = new Translingo('en', phrases);
 ```
 
 ### 3. Using the Library
@@ -145,7 +145,7 @@ console.log(lang.translate(1)); // 좋은 아침
 Here is a complete example of how to use the library:
 
 ```javascript
-import PolyLingo from 'polyLingo';
+import Translingo from 'translingo';
 
 const phrases = [
     {
@@ -163,7 +163,7 @@ const phrases = [
 ];
 
 // Initialize with default language as French
-const lang = new PolyLingo('fr', phrases);
+const lang = new Translingo('fr', phrases);
 
 // Translate phrases
 console.log(lang.translate(1)); // Bonjour

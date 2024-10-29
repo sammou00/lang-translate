@@ -1,4 +1,4 @@
-class PolyLingo {
+class Translingo {
     constructor(defaultLanguage = 'en', phrases = []) {
         this.defaultLanguage = defaultLanguage;
         this.phrases = phrases;
@@ -60,4 +60,4 @@ class PolyLingo {
     }
 }
 
-export default PolyLingo;
+export default Translingo;
