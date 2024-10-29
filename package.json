@@ -1,25 +1,25 @@
 {
-  "name": "linguify",
-  "type": "module",
-  "version": "1.0.0",
-  "description": "This library is designed to facilitate the management and translation of phrases for multi-language websites. It provides a simple interface for setting the default language and  retrieving translations based on the current language.",
-  "main": "index.js",
-  "scripts": {
-      "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-      "type": "git",
-      "url": "git+https://github.com/sammou00/linguify.git"
-  },
-  "keywords": [
-      "language",
-      "lang",
-      "translate"
-  ],
-  "author": "samirm00",
-  "license": "ISC",
-  "bugs": {
-      "url": "https://github.com/sammou00/linguify/issues"
-  },
-  "homepage": "https://github.com/sammou00/linguify#readme"
+"name": "polyLingo",
+"type": "module",
+"version": "1.0.0",
+"description": "This library is designed to facilitate the management and translation of phrases for multi-language websites. It provides a simple interface for setting the default language and  retrieving translations based on the current language.",
+"main": "index.js",
+"scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+},
+"repository": {
+    "type": "git",
+    "url": "git+https://github.com/sammou00/polyLingo.git"
+},
+"keywords": [
+    "language",
+    "lang",
+    "translate"
+],
+"author": "sammou00",
+"license": "ISC",
+"bugs": {
+    "url": "https://github.com/sammou00/polyLingo/issues"
+},
+"homepage": "https://github.com/sammou00/polyLingo#readme"
 }

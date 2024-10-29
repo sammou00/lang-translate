@@ -1,4 +1,4 @@
-class Linguify {
+class PolyLingo {
     constructor(defaultLanguage = 'en', phrases = []) {
         this.defaultLanguage = defaultLanguage;
         this.phrases = phrases;
@@ -60,4 +60,4 @@ class Linguify {
     }
 }
 
-export default Linguify;
+export default PolyLingo;
