@@ -1,4 +1,4 @@
-# Lang-translate
+# Linguify
 
 This library is designed to facilitate the management and translation of phrases for multi-language websites.
 It provides a simple interface for setting the default language and retrieving translations based on the current language.
@@ -11,18 +11,18 @@ It provides a simple interface for setting the default language and retrieving t
 
 ## Installation
 
-Install `lang-translate`
+Install `Linguify`
 
-1. `npm i lang-translate`
+1. `npm i Linguify`
 
 ## Getting Started
 
 ### 1. Import the Library
 
-First, import the `LanguageTranslate` class :
+First, import the `Linguify` class :
 
 ```javascript
-import LanguageTranslate from 'LanguageTranslate';
+import Linguify from 'Linguify';
 ```
 
 ### 3. Create a file `phrases.js` in a new folder `data`
@@ -97,11 +97,11 @@ export default phrases;
 
 ### 2. Initialize the Library
 
-Create an instance of the `LanguageTranslate` class, you need to pass the language and your phrases array:
+Create an instance of the `Linguify` class, you need to pass the language and your phrases array:
 
 ```javascript
 import phrases from './data/phrases.js';
-const lang = new LanguageTranslate('en', phrases);
+const lang = new Linguify('en', phrases);
 ```
 
 ### 3. Using the Library
@@ -146,7 +146,7 @@ console.log(lang.translate(1)); // 좋은 아침
 Here is a complete example of how to use the library:
 
 ```javascript
-import LanguageTranslate from 'LanguageTranslate';
+import Linguify from 'Linguify';
 
 const phrases = 
 [
@@ -165,7 +165,7 @@ const phrases =
 ];
 
 // Initialize with default language as French
-const lang = new LanguageTranslate('fr', phrases);
+const lang = new Linguify('fr', phrases);
 
 // Translate phrases
 console.log(lang.translate(1)); // Bonjour

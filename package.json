@@ -1,25 +1,25 @@
 {
-  "name": "language-translate",
+  "name": "Linguify",
   "type": "module",
   "version": "1.0.0",
   "description": "This library is designed to facilitate the management and translation of phrases for multi-language websites. It provides a simple interface for setting the default language and  retrieving translations based on the current language.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+      "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
-    "type": "git",
-    "url": "git+https://github.com/sammou00/lang-translate.git"
+      "type": "git",
+      "url": "git+https://github.com/sammou00/Linguify.git"
   },
   "keywords": [
-    "language",
-    "lang",
-    "translate"
+      "language",
+      "lang",
+      "translate"
   ],
   "author": "samirm00",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/sammou00/lang-translate/issues"
+      "url": "https://github.com/sammou00/Linguify/issues"
   },
-  "homepage": "https://github.com/sammou00/lang-translate#readme"
+  "homepage": "https://github.com/sammou00/Linguify#readme"
 }
