@@ -11,9 +11,9 @@ It provides a simple interface for setting the default language and retrieving t
 
 ## Installation
 
-Install `Linguify`
+Install `linguify`
 
-1. `npm i Linguify`
+1. `npm i linguify`
 
 ## Getting Started
 
@@ -22,7 +22,7 @@ Install `Linguify`
 First, import the `Linguify` class :
 
 ```javascript
-import Linguify from 'Linguify';
+import Linguify from 'linguify';
 ```
 
 ### 3. Create a file `phrases.js` in a new folder `data`
@@ -146,7 +146,7 @@ console.log(lang.translate(1)); // 좋은 아침
 Here is a complete example of how to use the library:
 
 ```javascript
-import Linguify from 'Linguify';
+import Linguify from 'linguify';
 
 const phrases = 
 [

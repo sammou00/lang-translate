@@ -1,5 +1,5 @@
 {
-  "name": "Linguify",
+  "name": "linguify",
   "type": "module",
   "version": "1.0.0",
   "description": "This library is designed to facilitate the management and translation of phrases for multi-language websites. It provides a simple interface for setting the default language and  retrieving translations based on the current language.",
@@ -9,7 +9,7 @@
   },
   "repository": {
       "type": "git",
-      "url": "git+https://github.com/sammou00/Linguify.git"
+      "url": "git+https://github.com/sammou00/linguify.git"
   },
   "keywords": [
       "language",
@@ -19,7 +19,7 @@
   "author": "samirm00",
   "license": "ISC",
   "bugs": {
-      "url": "https://github.com/sammou00/Linguify/issues"
+      "url": "https://github.com/sammou00/linguify/issues"
   },
-  "homepage": "https://github.com/sammou00/Linguify#readme"
+  "homepage": "https://github.com/sammou00/linguify#readme"
 }
