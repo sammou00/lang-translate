@@ -1,4 +1,4 @@
-# Translingo
+# Lingoshift
 
 This library is designed to facilitate the management and translation of phrases for multi-language websites.
 It provides a simple interface for setting the default language and retrieving translations based on the current language.
@@ -11,18 +11,18 @@ It provides a simple interface for setting the default language and retrieving t
 
 ## Installation
 
-Install `translingo`
+Install `lingoshift`
 
-1. `npm i translingo`
+1. `npm i lingoshift`
 
 ## Getting Started
 
 ### 1. Import the Library
 
-First, import the ` Translingo` class :
+First, import the `Lingoshift` class :
 
 ```javascript
-import Translingo from 'translingo';
+import Lingoshift from 'lingoshift';
 ```
 
 ### 3. Create a file `phrases.js` in a new folder `data`
@@ -96,11 +96,11 @@ export default phrases;
 
 ### 2. Initialize the Library
 
-Create an instance of the `Translingo` class, you need to pass the language and your phrases array:
+Create an instance of the `Lingoshift` class, you need to pass the language and your phrases array:
 
 ```javascript
 import phrases from './data/phrases.js';
-const lang = new Translingo('en', phrases);
+const lang = new Lingoshift('en', phrases);
 ```
 
 ### 3. Using the Library
@@ -145,7 +145,7 @@ console.log(lang.translate(1)); // 좋은 아침
 Here is a complete example of how to use the library:
 
 ```javascript
-import Translingo from 'translingo';
+import Lingoshift from 'lingoshift';
 
 const phrases = [
     {
@@ -163,7 +163,7 @@ const phrases = [
 ];
 
 // Initialize with default language as French
-const lang = new Translingo('fr', phrases);
+const lang = new Lingoshift('fr', phrases);
 
 // Translate phrases
 console.log(lang.translate(1)); // Bonjour

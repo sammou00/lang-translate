@@ -1,4 +1,4 @@
-class Translingo {
+class Lingoshift {
     constructor(defaultLanguage = 'en', phrases = []) {
         this.defaultLanguage = defaultLanguage;
         this.phrases = phrases;
@@ -60,4 +60,4 @@ class Translingo {
     }
 }
 
-export default Translingo;
+export default Lingoshift;

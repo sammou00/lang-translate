@@ -1,5 +1,5 @@
 {
-    "name": "translingo",
+    "name": "lingoshift",
     "type": "module",
     "version": "1.0.1",
     "description": "This library is designed to facilitate the management and translation of phrases for multi-language websites. It provides a simple interface for setting the default language and  retrieving translations based on the current language.",
@@ -9,7 +9,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/sammou00/translingo.git"
+        "url": "git+https://github.com/sammou00/lingoshift.git"
     },
     "keywords": [
         "language",
@@ -19,7 +19,7 @@
     "author": "sammou00",
     "license": "ISC",
     "bugs": {
-        "url": "https://github.com/sammou00/translingo/issues"
+        "url": "https://github.com/sammou00/lingoshift/issues"
     },
-    "homepage": "https://github.com/sammou00/translingo#readme"
+    "homepage": "https://github.com/sammou00/lingoshift#readme"
 }
